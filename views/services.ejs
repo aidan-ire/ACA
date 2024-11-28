@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" type="text/css" href="s.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <title></title>
+</head>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header bg-header" id="header">
+        <nav class="nav container">
+            <a href="/" class="logo__aca">
+                <img src="/images/logo.PNG" class="aca__logo">
+              </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="/" class="nav__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="/aboutUs" class="nav__link">About Us</a>
+                    </li>
+                    <li>
+                        <a href="/services" class="nav__link">Services</a>
+                    </li>
+                    <li>
+                        <a href="/projects" class="nav__link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="/contact" class="nav__link button">Contact Us </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Close Button -->
+            <div class="nav__close" id="nav-close">
+                <i class="ri-close-large-line"></i>
+            </div>
+
+            <!-- Toggle Menu-->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-apps-line"></i>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- SERVICES -->
+    <section class="services">
+        <h2 class="services__title">Our Services</h2>
+        
+        <div class="services__grid">
+            <!-- Service Card: Renovations -->
+            <div class="service__card">
+                <img src="/images/reno.jpg" alt="Renovations">
+                <h3 class="service__title">Renovations</h3>
+                <p class="service__description">Full service renovation company offering high-quality work with quick project schedules.</p>
+                <span class="learn-more" onclick="openModal('renovationsModal')">Learn More</span>
+            </div>
+
+            <!-- Service Card: Attic Conversions -->
+            <div class="service__card">
+                <img src="/images/attic.jpg" alt="Attic Conversions">
+                <h3 class="service__title">Attic Conversions</h3>
+                <p class="service__description">High-quality attic conversions with fast project time schedules in Dublin and Kildare.</p>
+                <span class="learn-more" onclick="openModal('atticModal')">Learn More</span>
+            </div>
+
+            <!-- Service Card: Fitouts -->
+            <div class="service__card">
+                <img src="/images/office.jpg" alt="Fitouts">
+                <h3 class="service__title">Fitouts</h3>
+                <p class="service__description">With over 20 years in fitouts, we ensure your project is completed cost-effectively and on time.</p>
+                <span class="learn-more" onclick="openModal('fitoutsModal')">Learn More</span>
+            </div>
+
+            <!-- Service Card: Extensions -->
+            <div class="service__card">
+                <img src="/images/ex.jpg" alt="Extensions">
+                <h3 class="service__title">Extensions</h3>
+                <p class="service__description">We offer high-quality house extensions to meet your property needs and desires.</p>
+                <span class="learn-more" onclick="openModal('extensionsModal')">Learn More</span>
+            </div>
+
+            <!-- Service Card: Carpentry -->
+            <div class="service__card">
+                <img src="/images/carp.jpg" alt="Carpentry">
+                <h3 class="service__title">Carpentry</h3>
+                <p class="service__description">Experienced carpentry services ensuring every detail of your project is finished to a high standard.</p>
+                <span class="learn-more" onclick="openModal('carpentryModal')">Learn More</span>
+            </div>
+
+            <!-- Service Card: Ground Works -->
+            <div class="service__card">
+                <img src="/images/ground.jpg" alt="Ground Works">
+                <h3 class="service__title">Ground Works</h3>
+                <p class="service__description">Our team handles all landscaping, site clearance, and excavation needs with professional equipment.</p>
+                <span class="learn-more" onclick="openModal('groundWorksModal')">Learn More</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals for Service Details -->
+    <div id="renovationsModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('renovationsModal')">&times;</span>
+            <h3>Renovations</h3>
+            <p>Comprehensive renovation services from design to completion, ensuring quality and satisfaction.</p>
+        </div>
+    </div>
+
+    <div id="atticModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('atticModal')">&times;</span>
+            <h3>Attic Conversions</h3>
+            <p>Transform your attic into a functional space with our expert team, tailored to fit your needs.</p>
+        </div>
+    </div>
+
+    <div id="fitoutsModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('fitoutsModal')">&times;</span>
+            <h3>Fitouts</h3>
+            <p>Professional fitout services for retail, office, and residential spaces, designed for cost-efficiency and aesthetics.</p>
+        </div>
+    </div>
+
+    <div id="extensionsModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('extensionsModal')">&times;</span>
+            <h3>Extensions</h3>
+            <p>Expand your living space with high-quality house extensions that blend seamlessly with your property.</p>
+        </div>
+    </div>
+
+    <div id="carpentryModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('carpentryModal')">&times;</span>
+            <h3>Carpentry</h3>
+            <p>Skilled carpentry services for custom builds, fixtures, and fine finishes, all managed to perfection.</p>
+        </div>
+    </div>
+
+    <div id="groundWorksModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('groundWorksModal')">&times;</span>
+            <h3>Ground Works</h3>
+            <p>Professional ground works, including excavation, site preparation, and landscaping, handled with precision.</p>
+        </div>
+    </div>
+  
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__content">
+                <div>
+                    <h3 class="footer__title">Company</h3>
+                    <ul class="footer__links">
+                        <li><a href="#about" class="footer__link">About Us</a></li>
+                        <li><a href="#services" class="footer__link">Services</a></li>
+                        <li><a href="#projects" class="footer__link">Projects</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer__title">Information</h3>
+                    <ul class="footer__list">
+                        <li><address class="footer__info">ADDRESS <br> Donegal, Ireland</address></li>
+                        <li><address class="footer__info">Office Hours: <br> OPERATING HOURS</address></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer__title">Social Media</h3>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link"><i class="ri-facebook-circle-fill"></i></a>
+                        <a href="#" class="footer__social-link"><i class="ri-linkedin-box-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+            <span class="footer__copy">All rights reserved by ACA Construction</span>
+        </div>
+    </footer>
+
+    <!--=============== LEAFLET JS ===============-->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  
+    <script src="/js/s.js"></script>
+</body>
+</html>

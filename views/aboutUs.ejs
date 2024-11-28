@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" type="text/css" href="a.css">
+
+    <title>Responsive construction website - Bedimcode</title>
+</head>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header bg-header" id="header">
+        <nav class="nav container">
+          <a href="/" class="logo__aca">
+            <img src="/images/logo.PNG" class="aca__logo">
+          </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="/" class="nav__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="/aboutUs" class="nav__link">About Us</a>
+                    </li>
+                    <li>
+                        <a href="/services" class="nav__link">Services</a>
+                    </li>
+                    <li>
+                        <a href="/projects" class="nav__link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="/contact" class="nav__link button">Contact Us </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Close Button -->
+            <div class="nav__close" id="nav-close">
+                <i class="ri-close-large-line"></i>
+            </div>
+
+            <!-- Toggle Menu-->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-apps-line"></i>
+            </div>
+        </nav>
+    </header>
+        <!--==================== ABOUT ====================-->
+<main class="main">
+    <section class="about__section" id="about">
+        <div class="about__container container grid">
+            <div class="about__data">
+                <h1 class="section__subtitle">Building Dreams into Reality</h1>
+                <div class="about__d-writing">
+                <p class="about__description">
+                    ACA Construction is dedicated to providing top-notch construction and design services. With years of experience and a commitment to quality, we aim to exceed client expectations on every project.
+                </p>
+                <p class="about__description">
+                    Founded on the principles of integrity, innovation, and excellence, ACA Construction has been transforming visions into tangible results since [Year Established]. Our commitment to craftsmanship and attention to detail has earned us a reputation as a trusted leader in the construction industry.
+                </p>
+                <p class="about__description">
+                    Our services encompass a wide range of construction solutions, including residential, commercial, and industrial projects. Whether you're looking to build your dream home, renovate your existing space, or develop a commercial property, we have the expertise to bring your vision to life.
+                </p>
+            </div>
+        </div>
+        <div class="about__images">
+            <img src="/images/about-img-1.png" alt="Description of image 1" class="about__img-1">
+            <img src="/images/about-img-2.png" alt="Description of image 2" class="about__img-2">
+        </div>        
+        </div>
+    </section>
+
+    <!--==================== WHY CHOOSE US ====================-->
+    <section class="why-choose-us section" id="why-choose-us">
+        <div class="container">
+            <span class="section__subtitle">WHY CHOOSE US</span>
+            <h2 class="section__title">Your Trusted Partner in Construction</h2>
+            <p class="why-choose-us__description">
+                At ACA Construction, we don't just build buildings; we build communities. Our passion for construction drives us to create spaces that foster connection, productivity, and joy. Whether you're looking to build your dream home or expand your business, we're here to help make that dream a reality. Let us work together to create something remarkable.
+            </p>
+            <ul class="why-choose-us__list">
+                <li><i class="ri-check-line"></i> Extensive Industry Experience: With over [X] years in the industry, we understand the nuances of construction, enabling us to navigate challenges effectively and deliver results that exceed expectations.</li>
+                <li><i class="ri-check-line"></i> High-Quality Craftsmanship: Our skilled craftsmen take pride in their work, ensuring every project meets the highest standards of quality. We use only the best materials and techniques, resulting in durable, beautiful structures.</li>
+                <li><i class="ri-check-line"></i> Personalized Service: Every client is unique, and we take the time to understand your specific needs and preferences. Our tailored approach ensures that your vision is realized every step of the way.</li>
+                <li><i class="ri-check-line"></i> Timely Project Completion: We respect your time and deadlines. Our efficient project management practices help us stay on schedule and keep you informed throughout the construction process.</li>
+                <li><i class="ri-check-line"></i> Competitive Pricing: We believe that high-quality construction shouldn't come at an exorbitant price. Our transparent pricing structure ensures you receive the best value for your investment.</li>
+            </ul>
+        <div class="more-content">
+            <ul>
+                <li><i class="ri-check-line"></i> Safety First: The safety of our team and clients is paramount. We adhere to all safety regulations and standards, ensuring a safe working environment at all times.</li>
+                <li><i class="ri-check-line"></i> Innovative Solutions: We leverage the latest technology and trends in construction to deliver innovative solutions that enhance efficiency and aesthetics in our projects.</li>
+                <li><i class="ri-check-line"></i> Strong Client Relationships: We believe in building lasting relationships with our clients. Your satisfaction is our top priority, and we strive to provide exceptional customer service and support long after the project is complete.</li>
+                <li><i class="ri-check-line"></i> Sustainability Commitment: We are committed to sustainable building practices, incorporating energy-efficient designs and eco-friendly materials that minimize environmental impact and promote a greener future.</li>
+            </ul>
+        </div>
+        <button class="read-more-btn" onclick="toggleReadMore()">Read More</button>
+        </div>
+    </section>
+</main>
+    
+            <!--==================== OUR TEAM ====================-->
+            <section class="our-team section" id="our-team">
+                <div class="container">
+                    <span class="section__subtitle">OUR TEAM</span>
+                    <h2 class="section__title">Meet Our Experts</h2>
+                    <div class="team__grid">
+                        <div class="team__member">
+                            <img src="assets/img/team-member-1.jpg" alt="Team Member 1" class="team__member-img">
+                            <h3 class="team__member-name">John Doe</h3>
+                            <p class="team__member-role">Project Manager</p>
+                        </div>
+                        <div class="team__member">
+                            <img src="assets/img/team-member-2.jpg" alt="Team Member 2" class="team__member-img">
+                            <h3 class="team__member-name">Jane Smith</h3>
+                            <p class="team__member-role">Lead Architect</p>
+                        </div>
+                        <div class="team__member">
+                            <img src="assets/img/team-member-3.jpg" alt="Team Member 3" class="team__member-img">
+                            <h3 class="team__member-name">Michael Brown</h3>
+                            <p class="team__member-role">Construction Supervisor</p>
+                        </div>
+                        <div class="team__member">
+                            <img src="assets/img/team-member-4.jpg" alt="Team Member 4" class="team__member-img">
+                            <h3 class="team__member-name">Emily Davis</h3>
+                            <p class="team__member-role">Interior Designer</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <center><h1>What Our Clients Say</h1></center>
+    
+            <div class="testimonial-slider">        
+                <!-- Testimonial List -->
+                <div class="testimonial-list" role="region" aria-label="Testimonials">
+                  <!-- Testimonial -->
+                  <div class="testimonial">
+                    <!-- Bootstrap Icon -->
+                    <i class="bi bi-quote"></i>
+          
+                    <blockquote>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+                      quos laborum nesciunt, eveniet illum eum neque vitae perspiciatis
+                      nemo quo, molestias placeat sunt dignissimos nulla. Omnis
+                      consectetur aliquam ab incidunt!
+                    </blockquote>
+          
+                    <!-- User Info -->
+                    <div class="user-info">
+                      <img src="https://placehold.co/48?text=1" alt="" />
+                      <div class="user-details">
+                        <p class="name">John Doe</p>
+                        <p class="company">CEO, Company XYZ</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /Testimonial -->
+                  <!-- Testimonial -->
+                  <div class="testimonial">
+                    <!-- Bootstrap Icon -->
+                    <i class="bi bi-quote"></i>
+          
+                    <blockquote>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+                      quos laborum nesciunt, eveniet illum eum neque vitae perspiciatis
+                      nemo quo, molestias placeat sunt dignissimos nulla. Omnis
+                      consectetur aliquam ab incidunt!
+                    </blockquote>
+          
+                    <!-- User Info -->
+                    <div class="user-info">
+                      <img src="https://placehold.co/48?text=2" alt="" />
+                      <div class="user-details">
+                        <p class="name">John Doe</p>
+                        <p class="company">CEO, Company XYZ</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /Testimonial -->
+                  <!-- Testimonial -->
+                  <div class="testimonial">
+                    <!-- Bootstrap Icon -->
+                    <i class="bi bi-quote"></i>
+          
+                    <blockquote>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+                      quos laborum nesciunt, eveniet illum eum neque vitae perspiciatis
+                      nemo quo, molestias placeat sunt dignissimos nulla. Omnis
+                      consectetur aliquam ab incidunt!
+                    </blockquote>
+          
+                    <!-- User Info -->
+                    <div class="user-info">
+                      <img src="https://placehold.co/48?text=3" alt="" />
+                      <div class="user-details">
+                        <p class="name">John Doe</p>
+                        <p class="company">CEO, Company XYZ</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /Testimonial -->
+                </div>
+                <!-- /Testimonial List -->
+          
+                <!-- Button Navigation -->
+                <button class="prev" aria-label="Previous Testimonial">
+                  <i class="bi bi-chevron-left"></i>
+                </button>
+          
+                <button class="next" aria-label="Next Testimonial">
+                  <i class="bi bi-chevron-right"></i>
+                </button>
+                <!-- /Button Navigation -->
+          
+                <!-- Dot Navigation -->
+                <div class="dots-container"></div>
+                <!-- /Dot Navigation -->
+              </div>
+    
+            <!--==================== CONTACT ====================-->
+            <section class="contact section" id="contact">
+                <div class="container">
+                    <span class="section__subtitle">CONTACT US</span>
+                    <h3 class="section__title">Get in Touch</h3>
+                    <p>If you have any questions or would like to discuss your project, feel free to reach out!</p>
+                    <a href="/contact" class="button">Contact Now</a>
+                </div>
+            </section>
+        </main>
+    
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__container container grid">
+          <div>
+      
+          <div class="footer__content">
+            <div>
+              <h3 class="footer__title">Company</h3>
+              <ul class="footer__links">
+                <li><a href="#about" class="footer__link">About Us</a></li>
+                <li><a href="#services" class="footer__link">Services</a></li>
+                <li><a href="#projects" class="footer__link">Projects</a></li>
+              </ul>
+            </div>
+      
+            <div>
+              <h3 class="footer__title">Information</h3>
+              <ul class="footer__list">
+                <li>
+                  <address class="footer__info">ADDRESS <br> Donegal, Ireland</address>
+                </li>
+                <li>
+                  <address class="footer__info">Office Hours: <br> OPERATING HOURS</address>
+                </li>
+              </ul>
+            </div>
+      
+            <div>
+              <h3 class="footer__title">Social Media</h3>
+              <div class="footer__social">
+                <a href="#" class="footer__social-link">
+                  <i class="ri-facebook-circle-fill"></i>
+                </a>
+                <a href="#" class="footer__social-link">
+                  <i class="ri-linkedin-box-fill"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="footer__copy">All rights are reserved by ACA construction</span>
+      </footer>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="js/a.js"></script>
+</body>
+</html>

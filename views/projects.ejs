@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" type="text/css" href="p.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <title>Responsive Construction Website</title>
+</head>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header bg-header" id="header">
+        <nav class="nav container">
+            <a href="/" class="logo__aca">
+              <img src="/images/logo.PNG" class="aca__logo">
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="/" class="nav__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="/aboutUs" class="nav__link">About Us</a>
+                    </li>
+                    <li>
+                        <a href="/services" class="nav__link">Services</a>
+                    </li>
+                    <li>
+                        <a href="/projects" class="nav__link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="/contact" class="nav__link button">Contact Us </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Close Button -->
+            <div class="nav__close" id="nav-close">
+                <i class="ri-close-large-line"></i>
+            </div>
+
+            <!-- Toggle Menu-->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-apps-line"></i>
+            </div>
+        </nav>
+    </header>
+
+<!--==================== SIDEBAR ====================-->
+<div class="sidenav">
+    <h2>Projects</h2>
+    <div>
+        <!-- Featured and Current Projects -->
+        <center><a><button class="projects__button" id="show-all">Show All Projects</button></a></center>
+        <a href="#" data-category="featured">Featured Projects</a>
+        <a href="#" data-category="current">Current Projects</a>
+
+        <!-- Dropdown for Commercial -->
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle">Commercial &#9662;</a>
+            <div class="dropdown-content">
+                <a href="#" data-category="retail">Retail</a>
+                <a href="#" data-category="workplace">Workplace</a>
+            </div>
+        </div>
+
+        <!-- Dropdown for Residential -->
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle">Residential &#9662;</a>
+            <div class="dropdown-content">
+                <a href="#" data-category="apartments">Apartments</a>
+                <a href="#" data-category="houses">Houses</a>
+            </div>
+        </div>
+
+        <!-- Other Categories -->
+        <a href="#" data-category="education">Education</a>
+        <a href="#" data-category="healthcare">Healthcare</a>
+        <a href="#" data-category="hotel">Hotel</a>
+    </div>
+</div>
+
+<!--==================== PROJECT CARDS CONTENT ====================-->
+<div class="content">
+    <div id="project-cards">
+        <!-- Project cards will be dynamically loaded here -->
+    </div>
+</div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__content">
+                <div>
+                    <h3 class="footer__title">Company</h3>
+                    <ul class="footer__links">
+                        <li><a href="#about" class="footer__link">About Us</a></li>
+                        <li><a href="#services" class="footer__link">Services</a></li>
+                        <li><a href="#projects" class="footer__link">Projects</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer__title">Information</h3>
+                    <ul class="footer__list">
+                        <li><address class="footer__info">ADDRESS <br> Donegal, Ireland</address></li>
+                        <li><address class="footer__info">Office Hours: <br> OPERATING HOURS</address></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer__title">Social Media</h3>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link"><i class="ri-facebook-circle-fill"></i></a>
+                        <a href="#" class="footer__social-link"><i class="ri-linkedin-box-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+            <span class="footer__copy">All rights reserved by ACA Construction</span>
+        </div>
+    </footer>
+
+    <!--=============== LEAFLET JS ===============-->
+  
+    <script src="/js/p.js"></script>
+
+</body>
+</html>

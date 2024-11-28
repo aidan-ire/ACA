@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" type="text/css" href="c.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <title>Responsive construction website - Bedimcode</title>
+</head>
+<body class="contact-page">
+    <!--==================== HEADER ====================-->
+    <header class="header bg-header" id="header">
+        <nav class="nav container">
+            <a href="/" class="logo__aca">
+                <img src="/images/logo.PNG" class="aca__logo">
+              </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="/" class="nav__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="/aboutUs" class="nav__link">About Us</a>
+                    </li>
+                    <li>
+                        <a href="/services" class="nav__link">Services</a>
+                    </li>
+                    <li>
+                        <a href="/projects" class="nav__link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="/contact" class="nav__link button">Contact Us </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Close Button -->
+            <div class="nav__close" id="nav-close">
+                <i class="ri-close-large-line"></i>
+            </div>
+
+            <!-- Toggle Menu-->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-apps-line"></i>
+            </div>
+        </nav>
+    </header>
+    <!-- Contact Form -->
+     <div class="map-form-container">
+    <div class="form__container">
+        <h2>Contact Us</h2>
+        <form id="contactForm" action="/submit" method="post">
+            <input type="text" name="honeypot" style="display:none;">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="inquiryType">Type of Inquiry:</label>
+            <select id="inquiryType" name="inquiryType">
+                <option value="general">General Question</option>
+                <option value="quote">Request a Quote</option>
+                <option value="feedback">Feedback</option>
+            </select><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
+    <!-- Map Section -->
+    <section class="map__container">
+        <div id="map"></div>
+    </section>
+</div>
+  
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__content">
+                <div>
+                    <h3 class="footer__title">Company</h3>
+                    <ul class="footer__links">
+                        <li><a href="#about" class="footer__link">About Us</a></li>
+                        <li><a href="#services" class="footer__link">Services</a></li>
+                        <li><a href="#projects" class="footer__link">Projects</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer__title">Information</h3>
+                    <ul class="footer__list">
+                        <li><address class="footer__info">ADDRESS <br> Donegal, Ireland</address></li>
+                        <li><address class="footer__info">Office Hours: <br> OPERATING HOURS</address></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer__title">Social Media</h3>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link"><i class="ri-facebook-circle-fill"></i></a>
+                        <a href="#" class="footer__social-link"><i class="ri-linkedin-box-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+            <span class="footer__copy">All rights reserved by ACA Construction</span>
+        </div>
+    </footer>
+
+    <!--=============== LEAFLET JS ===============-->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  
+    <script src="/js/c.js"></script>
+</body>
+</html>
