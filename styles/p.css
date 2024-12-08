@@ -296,6 +296,7 @@ img {
       position: fixed;
       padding-top: 20px;
       z-index: 1;
+      margin-left: 115px;
   }
 
   .sidenav h2 {
